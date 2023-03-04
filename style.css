@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 5.5rem;
+    justify-content: space-around;
+    background-color: white;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.menubar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menubar ul li a {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0px 1vw;
+    text-decoration: none;
+
+}
+
+.menubar ul li a:hover {
+    color: #e510de;
+    border-top: #e510de 1px solid;
+}
+
+.btn input {
+    padding: 0.8rem 2.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background-color: #e510de;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.menuicon {
+    display: none;
+    font-size: 2rem;
+}
+
+/* Section */
+#home::before {
+    content: "";
+    background: url(Images/toomas-tartes-Yizrl9N_eDA-unsplash.jpg) no-repeat center center fixed;
+    background-color: black;
+    background-size: cover;
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    height: 30rem;
+    text-shadow: 3px 10px 21px 0px #fb2056;
+}
+
+
+#home #h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2rem 2rem 1rem 2rem;
+}
+
+
+#home #h1 {
+    position: relative;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    line-height: 51px;
+    text-shadow: 1px 0px 22px #fb2056, -1px 0px 22px #fb2056;
+    animation: text 2s 1;
+    animation-delay: 1s;
+    top: 10px;
+    text-align: center;
+}
+
+@keyframes text {
+    25% {
+        top: -20px;
+
+    }
+
+    50% {
+        top: 40px;
+
+    }
+
+    100% {
+        top: 10px;
+    }
+
+}
+
+#home button {
+    padding: 0.8rem 2.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: smaller;
+    color: white;
+    border: none;
+    box-shadow: 3px 10px 21px 0px rgb(238 7 40 / 50%);
+    background-color: #fb2056
+}
+
+hr {
+    width: 60px;
+    max-width: 455px;
+    border-color: #fb2056;
+    background-color: #fb2056;
+    box-shadow: 1px 3px 5px #fb2056;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 14px 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 700;
+    color: #404040;
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 55px 55px 0px 55px;
+    text-shadow: 1px 1px 9px rgb(62 29 78 / 63%)
+}
+
+#name2 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 900;
+    color: #404040;
+    margin: 0.9rem 2rem 1.5rem 2rem;
+    padding: 0.9px 55px 15px 55px;
+    text-shadow: 1px 1px 9px rgb(62 29 78 / 63%)
+}
+
+#info hr {
+    width: 100px;
+    max-width: 455px;
+    border-color: #fb2056;
+    background-color: #fb2056;
+    box-shadow: 1px 3px 5px #fb2056;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card img {
+
+    margin: 25px;
+    box-shadow: 10px 10px 0px 1px rgb(0 0 0 / 7%);
+    ;
+    border-radius: 4px;
+}
+
+.card h4 {
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+.card p {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.explore {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0px;
+    align-items: flex-end;
+    padding: 38px;
+    background: url(https://www.nationalgeographic.com/content/dam/expeditions/landing-pages/Interests/Hero-NEED-LICENSE-hiking3.ngsversion.1526680227918.adapt.1900.1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.explore div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.explore input[type="button"] {
+    padding: 0.8rem 2.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: #fb2056;
+    color: white;
+    border: none;
+    width: 170px;
+}
+
+.explore h2 {
+    margin: 12px 0px;
+    padding: 28px 28px 0px 0px;
+    font-size: xx-large;
+}
+
+.contact {
+    display: flex;
+    background-color: #030303EB;
+    color: whitesmoke;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+}
+
+
+
+
+/* Responsive Menu */
+
+/* Small devices (landscape phones, 576px and up) */
+
+
+@media (max-width: 547px) {
+    #home #h3 {
+        font-size: 1.5rem;
+    }
+
+    #home #h1 {
+        font-size: 2.5rem;
+    }
+
+    .menuicon {
+        display: initial;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #name {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0rem;
+    }
+
+    #name2 {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0rem;
+    }
+
+    .card img {
+        width: 90vw;
+        height: 60vw;
+        margin: 15px;
+    }
+
+    .explore {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explore div {
+        width: auto;
+        align-items: center;
+        font-size: small;
+
+    }
+
+    .explore h2 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .explore input[type="button"] {
+        padding: 0.5rem 1.3rem;
+        font-size: smaller;
+        width: 100px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact div {
+        align-items: flex-start;
+    }
+
+    .contact div iframe {
+        width: 80vw;
+        height: 60vw;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #home #h3 {
+        font-size: 1.5rem;
+    }
+
+    #home #h1 {
+        font-size: 2.5rem;
+    }
+
+    .menuicon {
+        display: initial;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #name {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0rem;
+    }
+
+    #name2 {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0rem;
+    }
+
+    .card img {
+        width: 90vw;
+        height: 60vw;
+        margin: 15px;
+    }
+
+    .explore {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explore div {
+        width: auto;
+        align-items: center;
+        font-size: small;
+
+    }
+
+    .explore h2 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .explore input[type="button"] {
+        padding: 0.5rem 1.3rem;
+        font-size: smaller;
+        width: 100px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact div {
+        align-items: flex-start;
+    }
+
+    .contact div iframe {
+        width: 80vw;
+        height: 60vw;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    #home #h3 {
+        font-size: 1.5rem;
+    }
+
+    #home #h1 {
+        font-size: 2.5rem;
+    }
+
+    .menuicon {
+        display: initial;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    #name {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0rem;
+    }
+
+    #name2 {
+        font-size: 1rem;
+        line-height: 2.5rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0rem;
+    }
+
+    .card img {
+        width: 90vw;
+        height: 60vw;
+        margin: 15px;
+    }
+
+    .explore {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explore div {
+        width: auto;
+        align-items: center;
+        font-size: small;
+
+    }
+
+    .explore h2 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .explore input[type="button"] {
+        padding: 0.5rem 1.3rem;
+        font-size: smaller;
+        width: 100px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact div {
+        align-items: flex-start;
+        font-size: x-small;
+    }
+
+    .contact div iframe {
+        width: 70vw;
+        height: 50vw;
+    }
+}
